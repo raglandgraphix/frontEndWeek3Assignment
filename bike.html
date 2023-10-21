@@ -9,9 +9,9 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <!--I add my own css. I like to have some freedom when it comes to the page looks like.-->
     <link href="css/week3.css" rel="stylesheet">
+   
 </head>
 <body class="pt-5">
-    <!--I added pt-5 to drop the page down low enough to be seen. It was being hidden behind the navbar because it is fixed . -->
     <!--I wanted to use shadow-color-black however it is another command from version 5-->
     <nav class="navbar navbar-expand-md navbar-dark bg-a9 shadow-sm border-bottom border-5 border-dark fixed-top" >
         <a href="index.html" class="navbar-brand " >Cycling for<span class="mental-health"> Mental Health</span></a>
@@ -40,54 +40,61 @@
         </div>
     </nav>
 <!--This is the start of the main -->
-
-<!-- I had to use a mt-5 to move the header down-->
-<div class="container-fluid  main mt-5 ">
+<div class="main container-fluid mt-5">
     <div class="row">
         <div class="col-12">
-            <h1 class="text-center">How Does Cycling Help <span class="mental-health">Mental Health</span></h1>
+            <h1 class="text-center">Best Bike for <span class="mental-health">Mental Health</span></h1>
         </div>
     </div>
     <div class="row">
-        <div class="col-12 col-md-6">
-            <img class="img-fluid" src="assets/benefits.jpg"/>
-        </div>
-<!--I used the col-12 so it takes up the whole page on a smalle screen, but then use a col-md-6 to put the image and the table side by side on a medium screen breakpoint-->
-        <div class="col-12 col-md-6">
-            <table class="table table-bordered">
-                <tr >
-                    <th class="border-secondary bg-secondary">Benefits of Cycling</th>
-                </tr>
-                <tr>
-                    <td class="border-secondary bg-light">Release Feel Good Hormones</td>
-                </tr>
-                <tr>
-                    <td class="border-secondary bg-light">Improve Confidence & Self-esteem</td>
-                </tr>
-                <tr>
-                    <td class="border-secondary bg-light">Improve Sleep</td>
-                </tr>
-                <tr>
-                    <td class="border-secondary bg-light">Better your Concentration and Focus</td>
-                </tr>
-                <tr>
-                    <td class="border-secondary bg-light">Happier Moods</td>
-                </tr>
-                <tr>
-                    <td class="border-secondary bg-light">Reduce Stress and Anxiety</td>
-                </tr>
-                <tr>
-                    <td class="border-secondary bg-light">Make New Friends</td>
-                </tr>
-                <tr>
-                    <td class="border-secondary bg-light">Boost Memory and Thinking Skills</td>
-                </tr>
-            </table>
+        <div class="col-12 col-md-3">
+              <!--used a card so that i could have copy with the images-->
+            <div class="card">
+                <img class="img-fluid" src="assets/gravelBike.jpg" alt="picture of gravel bike"/>
+                <div class="card-body">
+                    <h5>Gravel Bike</h5>
+                    <p>The gravel bike is best for those, who wish to go off the beaten path and on to the gravel roads or rural Nebraska</p>
+                </div>
+            </div>
             
         </div>
+        <div class="col-12 col-md-3">
+            <div class="card">
+                <img class="img-fluid" src="assets/roadBike.jpg" alt="picture of a road bike"/>
+                <div class="card-body">
+                    <h5>Road Bike</h5>
+                    <p>The road bike is great for those who want to ride on the roads and have a good time flying down the road.</p>
+
+                </div>
+            </div>
+            </div>
+        <div class="col-12 col-md-3">
+            <div class="card">
+                <img class="img-fluid" src="assets/fatTire.jpg" alt="picture of a fat tire bike"/>
+                <div class="card-body">
+                    <h5>Fat Tire Bike</h5>
+                    <p>The fat tire bike is great for those who want to adnenture into the woods, or can even be used on the gravel and road.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-md-3">
+            <div class="card">
+                <img class="img-fluid" src="assets/cruiser.jpg" alt="picture of a cruiser bike"/>
+                <div class="card-body">
+                    <h5>Cruiser Bikes</h5>
+                    <p>Cruiser bikes are great for the person who wants to cruise around the neighborhood and enjoy the day.</p>
+
+                </div>
+            </div>
+
+        </div>
+            
+        </div>
+
     </div>
 
 </div>
 
+    
 </body>
 </html>
