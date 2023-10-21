@@ -13,9 +13,10 @@
 <body class="pt-5">
     <!--I added pt-5 to drop the page down low enough to be seen. It was being hidden behind the navbar because it is fixed . -->
     <!--I wanted to use shadow-color-black however it is another command from version 5-->
-    <nav class="navbar navbar-expand-md navbar-dark bg-a9 shadow-sm border-bottom border-5 border-dark fixed-top" >
+    <nav class="navbar navbar-expand-md navbar-dark bg-a9 shadow-sm border-bottom border-5 border-dark fixed-top" aria-label="main navigation" >
         <a href="index.html" class="navbar-brand " >Cycling for<span class="mental-health"> Mental Health</span></a>
-        <button class="navbar-toggler" type="button" aria-controls="navbarDrop" data-toggle="collapse" data-target="#navbarDrop" >
+        <!--Aria elemnets are used for accessability-->
+        <button class="navbar-toggler" type="button" aria-controls="navbarDrop" data-toggle="collapse" data-target="#navbarDrop" aria-collapse="false" >
         <span class="navbar-toggler-icon"></span>
         </button>
         <!--I used Justify-content-end below because ms-auto is only available in bootstrap 5 or higher.-->
@@ -50,7 +51,7 @@
     </div>
     <div class="row">
         <div class="col-12 col-md-6">
-            <img class="img-fluid" src="assets/benefits.jpg"/>
+            <img class="img-fluid" src="assets/benefits.jpg" alt="image of the bennifits of cycling"/>
         </div>
 <!--I used the col-12 so it takes up the whole page on a smalle screen, but then use a col-md-6 to put the image and the table side by side on a medium screen breakpoint-->
         <div class="col-12 col-md-6">
